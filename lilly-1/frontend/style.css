@@ -1,0 +1,231 @@
+/* ---- Global styles ---- */
+
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styles. DO NOT REMOVE OR EDIT UNLESS ABSOLUTELY NECESSARY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    padding-top: 30px;
+}
+
+/* Disclaimer styles. DO NOT REMOVE OR EDIT UNLESS ABSOLUTELY NECESSARY */
+.disclaimer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    z-index: 1000;
+    font-weight: bold;
+    height: 30px;
+}
+
+/* ---- Your custom styles below ---- */
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Disclaimer Styles */
+.disclaimer {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Flex Container Styles */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Form and Medicine List Styles */
+#add-medicine,
+#medicine-list {
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+
+#medicine-list {
+    order: 2;
+    max-width: 45%;
+}
+
+/* Section Styles */
+
+
+/* Medicine List Styles */
+#medicine-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#medicine-list li {
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#medicine-list li:nth-child(odd) {
+    background-color: #bdc3c7;
+}
+
+.med-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.med-price {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+/* Existing styles... */
+
+/* Flex Container Styles */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Forms Container Styles */
+.forms-container {
+    flex: 1;
+    max-width: 45%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+/* Sections within Forms Container */
+.forms-container section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Adjusted Medicine List Styles */
+#medicine-list {
+    flex: 1;
+    max-width: 45%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+/* Ensure section headings are consistent */
+.forms-container h2 {
+    font-size: 1.8em;
+    color: #34495e;
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Add Medicine Form Styles */
+#add-medicine-form,
+#delete-medicine-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-medicine-form label,
+#delete-medicine-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#add-medicine-form input,
+#delete-medicine-form input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-medicine-form button,
+#delete-medicine-form button {
+    width: 150px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#add-medicine-form button {
+    background-color: #27ae60;
+}
+
+#delete-medicine-form button {
+    background-color: #e74c3c;
+}
+
+#add-medicine-form button:hover {
+    background-color: #219150;
+}
+
+#delete-medicine-form button:hover {
+    background-color: #c0392b;
+}
+
+#add-medicine-message,
+#delete-medicine-message {
+    font-weight: bold;
+}
+
+#average-price {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#average-price h2 {
+    margin-bottom: 10px;
+}
+
+#average-price p {
+    font-size: 2em;
+    color: #e67e22;
+    margin: 0;
+}
